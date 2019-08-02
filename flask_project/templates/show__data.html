@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		h1{
+			color:white;
+			font-family:bold;
+		}
+		body{
+		background-color:orange;
+		text-align:center;
+		
+		}
+	</style>
+</head>
+<body>
+{% block content %}
+{% for d1 in d: %}
+<h6>Name : {{d1.name}}</h6>
+<h1>Organisation : {{d1.org}}</h1>
+<h2>DateOfBirth : {{d1.DOB}}</h2>
+{% endfor %} 
+{% endblock content %}
+
+</body>
+</html>

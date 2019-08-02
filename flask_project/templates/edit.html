@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Data</title>
+</head>
+<body>
+	<form action="{{url_for('editData',register_id=register.id)}}" method="post">
+		<h4>Name:<input type="text" name="name" value="{{register.name}}"><br><br></h4>
+		<h4>SurName:<input type="text" name="surname" value="{{register.surname}}"><br><br></h4>
+		<h4>Roll Number:<input type="text" name="roll_no" value="{{register.roll_no}}"><br><br></h4>
+		<h4>Mobile Number:<input type="text" name="mobile" value="{{register.mobile}}"><br><br></h4>
+		<h4>Branch:<input type="text" name="branch" value="{{register.branch}}"><br><br></h4>
+		<h1><input type="submit" value="Edit"></h1>
+	</form>
+</body>
+</html>
